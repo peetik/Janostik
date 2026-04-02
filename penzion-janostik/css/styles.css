@@ -1354,25 +1354,22 @@ h1, h2, h3, h4, h5, h6 {
 /* RESTAURANT TABS */
 .menu-tabs {
     display: flex;
-    gap: 4px;
-    background-color: var(--gray-200);
-    padding: 4px;
-    border-radius: var(--radius-md);
+    gap: 8px;
     margin-bottom: var(--spacing-xl);
 }
 
 .menu-tab {
     flex: 1;
-    padding: var(--spacing-md) var(--spacing-lg);
+    padding: var(--spacing-lg) var(--spacing-xl);
     font-family: var(--font-heading);
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--gray-600);
-    background: transparent;
-    border: none;
-    border-radius: var(--radius-sm);
+    letter-spacing: 0.08em;
+    color: var(--gray-500);
+    background: var(--bg-alt);
+    border: 2px solid transparent;
+    border-radius: var(--radius-md);
     cursor: pointer;
     transition: all var(--transition-fast);
     text-align: center;
@@ -1380,13 +1377,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu-tab:hover {
     color: var(--black);
-    background-color: rgba(255,255,255,0.5);
+    background: var(--bg);
+    border-color: var(--gray-300);
 }
 
 .menu-tab.active {
     color: var(--black);
-    background-color: var(--white);
-    box-shadow: var(--shadow-sm);
+    background: var(--mustard);
+    border-color: var(--mustard);
+    box-shadow: 0 4px 12px rgba(201, 162, 39, 0.3);
 }
 
 .menu-tab-content {
